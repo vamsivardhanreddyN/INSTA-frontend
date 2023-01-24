@@ -9,7 +9,7 @@ const PostView = () => {
     const [posts, setpost] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:5000/add")
+        axios.get("https://prussian-blue-antelope-tam.cyclic.app/add")
             .then((res) => {
                 setpost(res.data.profile)
             })
