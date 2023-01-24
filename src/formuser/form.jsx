@@ -20,7 +20,7 @@ const FormUser = () => {
         const config = {
             header: { "content-type": "multipart/form-user" },
         }
-        await axios.post("http://localhost:5000/add", formData, config)
+        await axios.post("https://prussian-blue-antelope-tam.cyclic.app/add", formData, config)
             .then((res) => {
                 console.log("post", res)
             }).catch((err) => console.log(err))
